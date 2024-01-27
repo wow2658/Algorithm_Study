@@ -1,3 +1,7 @@
+[![image](https://github.com/wow2658/Algorithm_Study/assets/34699039/2841ee63-6d1f-4a81-84d9-4ca99cc00618)](https://www.acmicpc.net/problem/1926)
+
+***
+
 <details><summary>1. 왜 502인가?</summary>
 
 ![image](https://github.com/wow2658/Algorithm_Study/assets/34699039/d1f65a57-9019-4089-84d8-564e9c33d361)
