@@ -1,2 +1,3 @@
-﻿# BFS
-[![100%](https://progress-bar.dev/0/?scale=30&title=progress&width=500&color=babaca&suffix=/30)](https://www.acmicpc.net/workbook/view/7313)
+# Algorithm_Study
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=wow2658)](https://solved.ac/wow2658/)
+
