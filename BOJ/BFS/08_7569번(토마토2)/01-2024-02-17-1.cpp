@@ -50,7 +50,7 @@ int main(void)
 			int ny = cy + dy[dir];
 			int nz = cz + dz[dir];
 			if (nx < 0 || nx >= n || ny < 0 || ny >= m || nz < 0 || nz >= h) continue;
-			if (board[nx][ny][nz] != 0 || dist[nx][ny][nz] != -1) continue;
+			if (board[nx][ny][nz] != 0 || dist[nx][ny][nz] != 0) continue;
 			q.push({ nx,ny,nz }); dist[nx][ny][nz] = dist[cx][cy][cz] + 1;
 		}
 	}
@@ -64,15 +64,14 @@ int main(void)
 			{
 				if (dist[j][k][i] == 0)
 				{
-					//cout << -1; //return 0;
+					cout << -1; return 0;
 				}
-
 
 				mx = max(mx, dist[j][k][i]);
 			}
 		}
 	}
 
-	cout << mx;
+	cout << mx - 1;
 
 }
