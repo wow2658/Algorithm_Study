@@ -1,2 +1,2 @@
 ﻿# BFS
-[![100%](https://progress-bar.dev/6/?scale=30&title=progress&width=500&color=babaca&suffix=/30)](https://www.acmicpc.net/workbook/view/7313)
+[![100%](https://progress-bar.dev/7/?scale=30&title=progress&width=500&color=babaca&suffix=/30)](https://www.acmicpc.net/workbook/view/7313)
