@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+ï»¿#include <bits/stdc++.h>
 using namespace std;
 #define X first
 #define Y second
@@ -18,9 +18,9 @@ int main(void)
 
 	while (t--)
 	{
-		int m, n, k = 0; // m°¡·Î¿­ n¼¼·ÎÇà [y][x]
+		int my, nh, k = 0; // mê°€ë¡œì—´ nì„¸ë¡œí–‰ [nh][my]
 
-		cin >> m >> n >> k;
+		cin >> my >> nh >> k;
 
 
 		while (k--)
@@ -32,11 +32,30 @@ int main(void)
 
 		}
 
+		/*	for (int i = 0; i < nh; i++)
+			{
+				for (int j = 0; j < my; j++)
+				{
+					cout << board[i][j] << ' ';
+				}
+				cout << '\n';
+			}
+
+			for (int i = 0; i < nh; i++)
+			{
+				for (int j = 0; j < my; j++)
+				{
+					cout << dist[i][j] << ' ';
+				}
+				cout << '\n';
+			}*/
+
+
 		int num = 0;
 		queue<pair<int, int>> q;
-		for (int i = 0; i < n; i++)
+		for (int i = 0; i < nh; i++)
 		{
-			for (int j = 0; j < m; j++)
+			for (int j = 0; j < my; j++)
 			{
 				if (board[i][j] == 1 && dist[i][j] == -1)
 				{
@@ -48,9 +67,9 @@ int main(void)
 
 						for (int dir = 0; dir < 4; dir++)
 						{
-							int nx = cur.X + dx[dir];
-							int ny = cur.Y + dy[dir];
-							if (nx < 0 || nx >= m || ny < 0 || ny >= n)continue;
+							int ny = cur.X + dy[dir];
+							int nx = cur.Y + dx[dir];
+							if (nx < 0 || nx >= my || ny < 0 || ny >= nh)continue;
 							if (board[ny][nx] != 1 || dist[ny][nx] != -1)continue;
 							q.push({ ny,nx }); dist[ny][nx] = dist[cur.Y][cur.X] + 1;
 						}
@@ -65,6 +84,10 @@ int main(void)
 
 
 
-
+		for (int i = 0; i < nh; i++)
+		{
+			fill(board[i], board[i] + my, 0);
+			fill(dist[i], dist[i] + my, 0);
+		}
 	}
 }
