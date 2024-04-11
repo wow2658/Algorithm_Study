@@ -1,0 +1,1 @@
+﻿[![image](https://github.com/wow2658/CodingTest/assets/34699039/1985bf6f-1e49-4e02-b2b7-11bf1d9cd877)](https://www.acmicpc.net/problem/20166)
