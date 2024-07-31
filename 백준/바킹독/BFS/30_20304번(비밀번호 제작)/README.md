@@ -1,0 +1,1 @@
+﻿[![image](https://github.com/user-attachments/assets/e3f90625-f944-4ca6-ad28-b8f6446e95ee)](https://www.acmicpc.net/problem/20304)
